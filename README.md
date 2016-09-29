@@ -1,4 +1,13 @@
-# face-tracking
+# Working on
+
+* Figuring out best way to get coordinates to work in a responsive setting
+* Refactoring math ratios / lock down the scope of the API
+* Refactoring TrackAndMove module
+
+
+# Project Summary
+
+## face-tracking
 Implementing a Open CV based solution with addition of machine learning classifiers into a React.js web application. The candidates faces would move / change based on the face data. I’ve managed to hack this prototype together of an orange “Trump” head, with eyes following the user around and neck turning using 3D transforms for the “neck turning”
 
 Lot’s of silly ideas come to mind with the web app, for example, we can
@@ -14,7 +23,7 @@ Using the face tracking data stream, depending on where a person is in the frame
 
 =======================
 
-# johnny-five
+## johnny-five
 ( Javascript Robotics )
 The final step of the project is to create a robot Trump and Hillary which is essentially just hollow shells for the heads being turned by motors.
 
