@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import HeadContainer from './HeadContainer';
 import compatibility from './../detect-track/compatibility';
 import Smoother from './../detect-track/Smoother';
@@ -7,7 +7,7 @@ import objectdetect from './../detect-track/ObjectDetect';
 import ObjectDetectFrontalFace from './../detect-track/ObjectDetectFrontalFace';
 
 
-export default class TrackAndMove extends Component {
+export default class TrackAndMove extends React.Component {
   
   constructor(props) {
     super(props);
@@ -53,13 +53,16 @@ export default class TrackAndMove extends Component {
           coord[2] *= video.videoWidth / detector.canvas.width;
           coord[3] *= video.videoHeight / detector.canvas.height;
           
-          // Display hitbox overlay:
+          /* Display hitbox overlay
+          *  ----------------------
+          *  This is temporary for development only until the right ratios and
+          *  responsive scaling is figured out, after that this will be hidden from
+          *  production build with a toggle flag for local development */
           let
             xAxis = ~~(coord[0] + coord[2] * 1.0 / 8 + video.offsetLeft),
             yAxis = ~~(coord[1] + coord[3] * 0.8 / 8 + video.offsetTop),
             xAngle = ~~(coord[2] * 6 / 8),
             yAngle = ~~(coord[3] * 6 / 8);
-          
           
           hitbox.style.left = ~~(coord[0] + coord[2] * 1.0 / 8 + video.offsetLeft) + 'px';
           hitbox.style.top = ~~(coord[1] + coord[3] * 0.8 / 8 + video.offsetTop) + 'px';
@@ -70,6 +73,7 @@ export default class TrackAndMove extends Component {
           // Sending coordinates to HeadContainer.js
           head.setCoordinates(xAxis,yAxis,xAngle,yAngle);
           //head.setCoordinates(xAxis,yAxis,coord[0],coord[1],coord[2],coord[3]);
+          
           
         } else {
           var opacity = hitbox.style.opacity - 0.2;
@@ -102,7 +106,7 @@ export default class TrackAndMove extends Component {
     return (
       <div style={{display:'flex', justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
         <HeadContainer ref={c=>this._head=c} repositionModifier='4' allowConstraints={true} />
-        <video ref={c=>this._video=c} style={{float: 'left', marginRight: '1em'}}>..</video>
+        <video ref={c=>this._video=c} style={{width:'94vw',height:'auto',margin:'0 3vw'}}>..</video>
         <div ref={c=>this._hitbox=c} style={{zIndex:1000,border:'5px solid red',position: 'absolute', display: 'block', opacity: 0}}>
         </div>
       </div>
