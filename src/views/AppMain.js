@@ -13,7 +13,7 @@ export default class AppMain extends React.Component {
   
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {userCameraWidth: 0, userCameraHeight: 0};
   }
   
   componentDidMount() {
@@ -30,6 +30,8 @@ export default class AppMain extends React.Component {
         video.play();
       
       if (video.readyState === video.HAVE_ENOUGH_DATA && video.videoWidth > 0) {
+        
+        this.setVideoDimensions(video);
         
         // Prepare the detector once the video dimensions are known:
         if (!detector) {
@@ -51,7 +53,6 @@ export default class AppMain extends React.Component {
             c1 = coord[1] *= video.videoHeight / detector.canvas.height,
             c2 = coord[2] *= video.videoWidth / detector.canvas.width,
             c3 = coord[3] *= video.videoHeight / detector.canvas.height;
-          
           
           // Using hitboxes temporarily for dev to get ratios down right
           this._hitbox.style.left = ~~(c0 + c2 * (1.0 / 8) + video.offsetLeft) + 'px';
@@ -88,7 +89,22 @@ export default class AppMain extends React.Component {
   };
   
   
+  setVideoDimensions = (video) => {
+    this.setState({userCameraWidth: video.videoWidth, userCameraHeight: video.videoHeight});
+    console.log('usercamera', this.state.userCameraWidth, this.state.userCameraHeight);
+  };
+  
+  
   render() {
+    
+    const {viewport} = this.props;
+    const cameraFeed = {
+      width: this.state.userCameraWidth,
+      height: this.state.userCameraHeight
+    };
+    
+    console.log('camerafeed', cameraFeed);
+    
     
     const videoStyles = {
       boxShadow: '0 0 3px 0 #f2f2f2',
@@ -98,7 +114,7 @@ export default class AppMain extends React.Component {
     
     return (
       <div style={{display:'flex', justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
-        <Coordinator ref={c=>this._coordinator=c}/>
+        <Coordinator viewport={viewport} ref={c=>this._coordinator=c}/>
         <video ref={c=>this._video=c} style={videoStyles}>{``}</video>
         <div ref={c=>this._hitbox=c} style={{zIndex:1000,border:'5px solid red',position: 'absolute', display: 'block', opacity: 0}}>
         </div>

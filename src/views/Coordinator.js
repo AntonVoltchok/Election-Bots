@@ -11,7 +11,7 @@ export default class Coordinator extends Component {
     };
   }
   
-  // calculate distance between each time, if the number is under a certain threshold, ignore it
+  // @todo calculate distance between each time, if the number is under a certain threshold, ignore it
   
   setCoordinates = (c0, c1, c2, c3, video) => {
     
@@ -23,27 +23,15 @@ export default class Coordinator extends Component {
     
   };
   
-  getClientInfo = () => {
-    const w = window,
-      d = document,
-      e = d.documentElement,
-      g = d.getElementsByTagName('body')[0],
-      x = w.innerWidth || e.clientWidth || g.clientWidth,
-      y = w.innerHeight|| e.clientHeight|| g.clientHeight;
-    return {
-      x: x,
-      y: y
-    }
-  };
   
   render() {
     const {xAxis, yAxis} = this.state;
   
     let xModifier = ((xAxis*.21) / .5) - 360;
-    // if (xModifier > 25)
-    //   xModifier = 25;
-    // else if (xModifier < -25)
-    //   xModifier = -25;
+    if (xModifier > 25)
+      xModifier = 25;
+    else if (xModifier < -25)
+      xModifier = -25;
     
     return (
       <div>
