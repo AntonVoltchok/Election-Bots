@@ -90,8 +90,10 @@ export default class AppMain extends React.Component {
   
   
   setVideoDimensions = (video) => {
-    this.setState({userCameraWidth: video.videoWidth, userCameraHeight: video.videoHeight});
-    console.log('usercamera', this.state.userCameraWidth, this.state.userCameraHeight);
+    if (this.state.userCameraWidth === 0 && this.state.userCameraHeight === 0) {
+      this.setState({userCameraWidth: video.videoWidth, userCameraHeight: video.videoHeight});
+      console.log('usercamera', this.state.userCameraWidth, this.state.userCameraHeight);
+    }
   };
   
   

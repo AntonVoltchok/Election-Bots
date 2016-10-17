@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a114dd0-4ab7-409a-9bab-20889408fde0" name="Default" comment="hooked up FireBase for production builds, created AppMain.js (to initialize video, detector, smoother, and pass coordinates) and Coordinator.js (take coordinates and convert into ratios) to replace TrackAndMove module, HeadContainer is no longer stateful, switchted compatibility to use arrow functions">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.firebaserc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database.rules.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/firebase.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/AppMain.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/Coordinator.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/views/TrackAndMove.js" afterPath="" />
+    <list default="true" id="9a114dd0-4ab7-409a-9bab-20889408fde0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controls/CameraRTC.js" afterPath="$PROJECT_DIR$/src/controls/CameraRTC.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/detect-track/ObjectDetect.js" afterPath="$PROJECT_DIR$/src/detect-track/ObjectDetect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/detect-track/compatibility.js" afterPath="$PROJECT_DIR$/src/detect-track/compatibility.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/HeadContainer.js" afterPath="$PROJECT_DIR$/src/views/HeadContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/AppMain.js" afterPath="$PROJECT_DIR$/src/views/AppMain.js" />
     </list>
     <ignored path="election-bots.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,85 +26,65 @@
     <favorites_list name="election-bots" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.6343612">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="compatibility.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/detect-track/compatibility.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="25" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="25" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/App.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AppMain.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/views/AppMain.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="112">
-                  <caret line="63" column="27" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Coordinator.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/views/Coordinator.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-150">
-                  <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                    <marker date="1476715372000" expanded="true" signature="966:1126" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="HeadContainer.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/views/HeadContainer.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-735">
-                  <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="CameraRTC.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/controls/CameraRTC.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#50#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="compatibility.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/detect-track/compatibility.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppMain.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/AppMain.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="96" column="4" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Coordinator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/Coordinator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+                <marker date="1476715959000" expanded="true" signature="666:814" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeadContainer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/HeadContainer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-735">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -134,11 +105,11 @@
         <option value="$PROJECT_DIR$/src/detect-track/ObjectDetectFrontalFace.js" />
         <option value="$PROJECT_DIR$/src/detect-track/compatibility.js" />
         <option value="$PROJECT_DIR$/src/views/TrackAndMove.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/controls/CameraRTC.js" />
         <option value="$PROJECT_DIR$/src/views/HeadContainer.js" />
-        <option value="$PROJECT_DIR$/src/views/AppMain.js" />
         <option value="$PROJECT_DIR$/src/views/Coordinator.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/views/AppMain.js" />
       </list>
     </option>
   </component>
@@ -389,7 +360,7 @@
       <workItem from="1476396275622" duration="990000" />
       <workItem from="1476400743231" duration="303000" />
       <workItem from="1476578921159" duration="17856000" />
-      <workItem from="1476713864603" duration="1507000" />
+      <workItem from="1476713864603" duration="4010000" />
     </task>
     <task id="LOCAL-00001" summary="removing bower_components, tested a few libs but didn't end up using any of them, some code comments">
       <created>1476079327040</created>
@@ -398,17 +369,31 @@
       <option name="project" value="LOCAL" />
       <updated>1476079327040</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="hooked up FireBase for production builds, created AppMain.js (to initialize video, detector, smoother, and pass coordinates) and Coordinator.js (take coordinates and convert into ratios) to replace TrackAndMove module, HeadContainer is no longer stateful, switchted compatibility to use arrow functions">
+      <created>1476715586716</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1476715586716</updated>
+    </task>
+    <task id="LOCAL-00003" summary="moved getClientInfo to top of tree, setting video dimensions into state if video has enough data">
+      <created>1476717678424</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1476717678424</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74629000" />
+    <option name="totallyTimeSpent" value="77132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1938046" sideWeight="0.88827586" order="0" side_tool="false" content_ui="combo" x="111" y="73" width="960" height="1053" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1938046" sideWeight="0.88827586" order="0" side_tool="false" content_ui="combo" x="111" y="73" width="960" height="1053" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3423517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31277534" sideWeight="0.20492454" order="8" side_tool="true" content_ui="tabs" />
@@ -416,7 +401,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21540062" sideWeight="0.4853058" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.122960374" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35535976" sideWeight="0.7950755" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22760646" sideWeight="0.7950755" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13326283" sideWeight="0.11172414" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39941263" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -467,7 +452,8 @@
     <MESSAGE value="removing bower_components, tested a few libs but didn't end up using any of them" />
     <MESSAGE value="removing bower_components, tested a few libs but didn't end up using any of them, some code comments" />
     <MESSAGE value="hooked up FireBase for production builds, created AppMain.js (to initialize video, detector, smoother, and pass coordinates) and Coordinator.js (take coordinates and convert into ratios) to replace TrackAndMove module, HeadContainer is no longer stateful, switchted compatibility to use arrow functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="hooked up FireBase for production builds, created AppMain.js (to initialize video, detector, smoother, and pass coordinates) and Coordinator.js (take coordinates and convert into ratios) to replace TrackAndMove module, HeadContainer is no longer stateful, switchted compatibility to use arrow functions" />
+    <MESSAGE value="moved getClientInfo to top of tree, setting video dimensions into state if video has enough data" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved getClientInfo to top of tree, setting video dimensions into state if video has enough data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -730,6 +716,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -775,26 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/AppMain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="63" column="27" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMCore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -813,11 +780,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/Coordinator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        <state relative-caret-position="105">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1476715372000" expanded="true" signature="966:1126" ph="..." />
+            <marker date="1476715959000" expanded="true" signature="666:814" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/AppMain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="96" column="4" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
