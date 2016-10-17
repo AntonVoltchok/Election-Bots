@@ -1,250 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a114dd0-4ab7-409a-9bab-20889408fde0" name="Default" comment="removing bower_components, tested a few libs but didn't end up using any of them">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/election_bots_node_modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/core-component-page/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/core-component-page/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/core-component-page/bowager-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/core-component-page/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/core-component-page/core-component-page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/core-component-page/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/core-component-page/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/example.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/color/Color.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/color/interpret.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/color/math.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/color/toString.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/controllers/BooleanController.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/controllers/ColorController.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/controllers/Controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/controllers/FunctionController.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/controllers/NumberController.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/controllers/NumberControllerBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/controllers/NumberControllerSlider.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/controllers/NumberControllerSlider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/controllers/OptionController.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/controllers/StringController.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/controllers/factory.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/dom/CenteredDiv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/dom/dom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/gui/GUI.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/gui/GUI.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/gui/_structure.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/gui/saveDialogue.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/gui/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/gui/style.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/utils/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/utils/css.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/src/dat/utils/requestAnimationFrame.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/utils/build.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/utils/build_color.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/utils/build_gui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/utils/builder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/utils/closure.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dat-gui/utils/license.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/platform/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/platform/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/platform/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/platform/build.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/platform/platform.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/platform/platform.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/build.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/layout.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/polymer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/polymer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/polymer.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/threejs/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/threejs/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking-elements/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking-elements/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking-elements/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking-elements/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking-elements/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking-elements/examples/assets/faces.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking-elements/examples/assets/psmove.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking-elements/examples/color.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking-elements/examples/object.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking-elements/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking-elements/src/canvas-color-tracking.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking-elements/src/canvas-object-tracking.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking-elements/src/image-color-tracking.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking-elements/src/image-object-tracking.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking-elements/src/utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking-elements/src/video-color-tracking.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking-elements/src/video-object-tracking.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/assets/opencv_haarcascade_converter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/assets/opencv_haarcascade_eye.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/assets/opencv_haarcascade_frontalface_alt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/assets/opencv_haarcascade_mouth.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/assets/opencv_haarcascade_upper_body.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/book1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/book2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/box1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/box2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/brief1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/brief2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/color_camera_gui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/draw_frame.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/faces.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/fast.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/fish_tank/FishTankRenderer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/fish_tank/nx.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/fish_tank/ny.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/fish_tank/nz.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/fish_tank/px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/fish_tank/py.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/fish_tank/pz.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/frame.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/minions.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/minions.ogv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/psmove.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/splines.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/assets/stats.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/brief.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/brief_camera.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/color_camera.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/color_draw_something.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/color_fish_tank.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/color_hello_world.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/color_video.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/face_camera.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/face_fish_tank.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/face_hello_world.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/face_tag_friends.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/fast.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/examples/fast_camera.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/src/detection/ViolaJones.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/src/detection/training/haar/eye.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/src/detection/training/haar/face.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/src/detection/training/haar/mouth.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/src/features/Brief.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/src/features/Fast.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/src/math/Math.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/src/math/Matrix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/src/pose/EPnP.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/src/trackers/ColorTracker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/src/trackers/ObjectTracker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/src/trackers/Tracker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/src/trackers/TrackerTask.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/src/tracking.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/src/utils/Canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/src/utils/DisjointSet.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/src/utils/EventEmitter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/src/utils/Image.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/test/Benchmark.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/test/Brief.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/test/ColorTracker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/test/Fast.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/test/ObjectTracker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/test/assets/box1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/test/assets/box2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/test/assets/faces.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/test/assets/psmove.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/test/perf/Brief.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/test/perf/ColorTracker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/test/perf/Fast.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/test/perf/ObjectTracker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/test/utils/benchmark.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking.js/test/utils/sandbox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/assets/opencv_haarcascade_converter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/assets/opencv_haarcascade_eye.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/assets/opencv_haarcascade_frontalface_alt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/assets/opencv_haarcascade_mouth.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/assets/opencv_haarcascade_upper_body.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/book1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/book2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/box1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/box2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/brief1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/brief2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/color_camera_gui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/draw_frame.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/faces.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/fast.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/fish_tank/FishTankRenderer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/fish_tank/nx.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/fish_tank/ny.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/fish_tank/nz.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/fish_tank/px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/fish_tank/py.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/fish_tank/pz.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/frame.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/minions.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/minions.ogv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/psmove.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/splines.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/assets/stats.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/brief.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/brief_camera.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/color_camera.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/color_draw_something.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/color_fish_tank.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/color_hello_world.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/color_video.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/face_camera.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/face_fish_tank.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/face_hello_world.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/face_tag_friends.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/fast.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/examples/fast_camera.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/src/detection/ViolaJones.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/src/detection/training/haar/eye.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/src/detection/training/haar/face.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/src/detection/training/haar/mouth.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/src/features/Brief.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/src/features/Fast.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/src/math/Math.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/src/math/Matrix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/src/pose/EPnP.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/src/trackers/ColorTracker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/src/trackers/ObjectTracker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/src/trackers/Tracker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/src/trackers/TrackerTask.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/src/tracking.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/src/utils/Canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/src/utils/DisjointSet.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/src/utils/EventEmitter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/src/utils/Image.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/test/Benchmark.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/test/Brief.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/test/ColorTracker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/test/Fast.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/test/ObjectTracker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/test/assets/box1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/test/assets/box2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/test/assets/faces.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/test/assets/psmove.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/test/perf/Brief.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/test/perf/ColorTracker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/test/perf/Fast.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/test/perf/ObjectTracker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/test/utils/benchmark.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/tracking/test/utils/sandbox.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/election-bots.iml" afterPath="$PROJECT_DIR$/.idea/election-bots.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+    <list default="true" id="9a114dd0-4ab7-409a-9bab-20889408fde0" name="Default" comment="hooked up FireBase for production builds, created AppMain.js (to initialize video, detector, smoother, and pass coordinates) and Coordinator.js (take coordinates and convert into ratios) to replace TrackAndMove module, HeadContainer is no longer stateful, switchted compatibility to use arrow functions">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.firebaserc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database.rules.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/firebase.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/AppMain.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/Coordinator.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/views/TrackAndMove.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/TrackAndMove.js" afterPath="$PROJECT_DIR$/src/views/TrackAndMove.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controls/CameraRTC.js" afterPath="$PROJECT_DIR$/src/controls/CameraRTC.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/detect-track/ObjectDetect.js" afterPath="$PROJECT_DIR$/src/detect-track/ObjectDetect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/detect-track/compatibility.js" afterPath="$PROJECT_DIR$/src/detect-track/compatibility.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/HeadContainer.js" afterPath="$PROJECT_DIR$/src/views/HeadContainer.js" />
     </list>
     <ignored path="election-bots.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -266,92 +35,85 @@
     <favorites_list name="election-bots" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TrackAndMove.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/views/TrackAndMove.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeadContainer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/HeadContainer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CameraRTC.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controls/CameraRTC.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObjectDetect.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/detect-track/ObjectDetect.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="857">
-              <caret line="434" column="11" selection-start-line="434" selection-start-column="11" selection-end-line="434" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Smoother.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/detect-track/Smoother.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObjectDetectFrontalFace.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/detect-track/ObjectDetectFrontalFace.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="3" column="5590" selection-start-line="3" selection-start-column="5590" selection-end-line="3" selection-end-column="5590" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="vertical" split-proportion="0.6343612">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="compatibility.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/detect-track/compatibility.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="25" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="25" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/App.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#39#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AppMain.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/views/AppMain.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="112">
+                  <caret line="63" column="27" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="27" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Coordinator.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/views/Coordinator.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-150">
+                  <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+                  <folding>
+                    <element signature="e#0#39#0" expanded="true" />
+                    <marker date="1476715372000" expanded="true" signature="966:1126" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="HeadContainer.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/views/HeadContainer.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-735">
+                  <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="CameraRTC.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/controls/CameraRTC.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#50#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -364,17 +126,19 @@
         <option value="$PROJECT_DIR$/src/views/TrackerContainer.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/detect-track/Smoother.js" />
-        <option value="$PROJECT_DIR$/src/detect-track/ObjectDetect.js" />
         <option value="$PROJECT_DIR$/src/detect-track/ObjectTracker.js" />
-        <option value="$PROJECT_DIR$/src/detect-track/ObjectDetectFrontalFace.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/detect-track/compatibility.js" />
         <option value="$PROJECT_DIR$/src/detect-track/CameraCompatLaunch.js" />
         <option value="$PROJECT_DIR$/src/utils.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/detect-track/ObjectDetect.js" />
+        <option value="$PROJECT_DIR$/src/detect-track/ObjectDetectFrontalFace.js" />
+        <option value="$PROJECT_DIR$/src/detect-track/compatibility.js" />
+        <option value="$PROJECT_DIR$/src/views/TrackAndMove.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/controls/CameraRTC.js" />
         <option value="$PROJECT_DIR$/src/views/HeadContainer.js" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/views/TrackAndMove.js" />
+        <option value="$PROJECT_DIR$/src/views/AppMain.js" />
+        <option value="$PROJECT_DIR$/src/views/Coordinator.js" />
       </list>
     </option>
   </component>
@@ -419,7 +183,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -466,12 +229,49 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="election-bots" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="election-bots" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="detect-track" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="election-bots" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="election-bots" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controls" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -485,6 +285,7 @@
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file:///Users/antonvolt/code/face-tracking/election-bots/src/App.js&#10;coo&#9;FILE&#9;file:///Users/antonvolt/code/face-tracking/election-bots/src/views/Coordinator.js&#10;coord&#9;FILE&#9;file:///Users/antonvolt/code/face-tracking/election-bots/src/views/Coordinator.js" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -582,35 +383,49 @@
       <workItem from="1475539791426" duration="2909000" />
       <workItem from="1475694784313" duration="2630000" />
       <workItem from="1475987725305" duration="561000" />
-      <workItem from="1476071194708" duration="1670000" />
+      <workItem from="1476071194708" duration="9584000" />
+      <workItem from="1476329457640" duration="595000" />
+      <workItem from="1476368418082" duration="1387000" />
+      <workItem from="1476396275622" duration="990000" />
+      <workItem from="1476400743231" duration="303000" />
+      <workItem from="1476578921159" duration="17856000" />
+      <workItem from="1476713864603" duration="1507000" />
     </task>
+    <task id="LOCAL-00001" summary="removing bower_components, tested a few libs but didn't end up using any of them, some code comments">
+      <created>1476079327040</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1476079327040</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44077000" />
+    <option name="totallyTimeSpent" value="74629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19698173" sideWeight="0.88827586" order="0" side_tool="false" content_ui="combo" x="111" y="73" width="960" height="1053" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1938046" sideWeight="0.88827586" order="0" side_tool="false" content_ui="combo" x="111" y="73" width="960" height="1053" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3423517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31277534" sideWeight="0.20492454" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27459618" sideWeight="0.4940429" order="2" side_tool="false" content_ui="tabs" x="640" y="303" width="640" height="777" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964718" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21540062" sideWeight="0.4853058" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.122960374" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2657856" sideWeight="0.7950755" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35535976" sideWeight="0.7950755" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13326283" sideWeight="0.11172414" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39941263" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27459618" sideWeight="0.4940429" order="2" side_tool="false" content_ui="tabs" x="640" y="303" width="640" height="777" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39941263" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3423517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -650,88 +465,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="removing bower_components, tested a few libs but didn't end up using any of them" />
-    <option name="LAST_COMMIT_MESSAGE" value="removing bower_components, tested a few libs but didn't end up using any of them" />
+    <MESSAGE value="removing bower_components, tested a few libs but didn't end up using any of them, some code comments" />
+    <MESSAGE value="hooked up FireBase for production builds, created AppMain.js (to initialize video, detector, smoother, and pass coordinates) and Coordinator.js (take coordinates and convert into ratios) to replace TrackAndMove module, HeadContainer is no longer stateful, switchted compatibility to use arrow functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="hooked up FireBase for production builds, created AppMain.js (to initialize video, detector, smoother, and pass coordinates) and Coordinator.js (take coordinates and convert into ratios) to replace TrackAndMove module, HeadContainer is no longer stateful, switchted compatibility to use arrow functions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controls/CameraRTC.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="46" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/TrackAndMove.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="57" column="72" selection-start-line="57" selection-start-column="72" selection-end-line="57" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/HeadContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
-          <caret line="97" column="34" selection-start-line="97" selection-start-column="34" selection-end-line="97" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controls/CameraRTC.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="46" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/TrackAndMove.js">
+    <entry file="file://$PROJECT_DIR$/src/views/AppMain.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
           <caret line="57" column="72" selection-start-line="57" selection-start-column="72" selection-end-line="57" selection-end-column="72" />
@@ -771,13 +514,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="46" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/TrackAndMove.js">
+    <entry file="file://$PROJECT_DIR$/src/views/AppMain.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
           <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
@@ -817,9 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -838,7 +575,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/TrackAndMove.js">
+    <entry file="file://$PROJECT_DIR$/src/views/AppMain.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
           <caret line="81" column="1" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
@@ -859,13 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-135">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -900,13 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/detect-track/compatibility.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -914,21 +637,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/tracking/build/tracking.js" />
+    <entry file="file://$PROJECT_DIR$/bower_components/tracking.js/examples/color_camera.html" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="672" column="0" selection-start-line="672" selection-start-column="0" selection-end-line="672" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/tracking/examples/color_fish_tank.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/detect-track/Smoother.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -936,48 +671,80 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.rules.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/detect-track/Smoother.js">
+    <entry file="file://$PROJECT_DIR$/.firebaserc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/HeadContainer.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/tracking/src/detection/training/haar/eye.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/tracking/src/detection/training/haar/face.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="0" column="1485" selection-start-line="0" selection-start-column="1485" selection-end-line="0" selection-end-column="1485" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/ua-parser-js/src/ua-parser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2910">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controls/CameraRTC.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/tracking/src/features/Brief.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-735">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/tracking/src/detection/ViolaJones.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/detect-track/ObjectDetectFrontalFace.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/detect-track/ObjectDetect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="857">
-          <caret line="434" column="11" selection-start-line="434" selection-start-column="11" selection-end-line="434" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/tracking/build/tracking.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+        <state relative-caret-position="127">
+          <caret line="695" column="6" selection-start-line="695" selection-start-column="6" selection-end-line="695" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -990,36 +757,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/tracking.js/examples/color_camera.html">
+    <entry file="file://$PROJECT_DIR$/src/detect-track/compatibility.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="37" />
+        <state relative-caret-position="135">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
+    <entry file="file://$PROJECT_DIR$/src/controls/CameraRTC.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="672" column="0" selection-start-line="672" selection-start-column="0" selection-end-line="672" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="135">
+          <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/detect-track/ObjectDetectFrontalFace.js">
+    <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="3" column="5590" selection-start-line="3" selection-start-column="5590" selection-end-line="3" selection-end-column="5590" />
-          <folding />
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/TrackAndMove.js">
+    <entry file="file://$PROJECT_DIR$/src/views/AppMain.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="112">
+          <caret line="63" column="27" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="27" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMCore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="239" column="0" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/HeadContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-735">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/Coordinator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1476715372000" expanded="true" signature="966:1126" ph="..." />
           </folding>
         </state>
       </provider>

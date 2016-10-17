@@ -731,7 +731,7 @@ const objectdetect = (function() {
         if (this.tilted) this.rsat = objectdetect.computeRsat(this.scaledGray, scaledWidth, scaledHeight, this.rsat);
         this.cannysat = undefined;
         
-        var newRects = objectdetect.detect(this.sat, this.rsat, this.ssat, this.cannysat, scaledWidth, scaledHeight, stepSize, this.compiledClassifiers[i]);
+        const newRects = objectdetect.detect(this.sat, this.rsat, this.ssat, this.cannysat, scaledWidth, scaledHeight, stepSize, this.compiledClassifiers[i]);
         for (var j = newRects.length - 1; j >= 0; --j) {
           newRects[j][0] *= width / scaledWidth;
           newRects[j][1] *= height / scaledHeight;

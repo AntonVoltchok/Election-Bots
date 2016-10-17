@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
-import TrackAndMove from './views/TrackAndMove';
+import AppMain from './views/AppMain';
 
 class App extends Component {
   render() {
     return (
       <div style={{margin:'2rem auto 0'}}>
-        <div className="App-header">
-          <TrackAndMove/>
-        </div>
+          <AppMain/>
       </div>
     );
   }

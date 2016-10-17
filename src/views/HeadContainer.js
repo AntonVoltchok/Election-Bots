@@ -4,47 +4,15 @@ export default class HeadContainer extends Component {
   
   constructor(props) {
     super(props);
-    this.state = {
-      xAxis: 0,
-      yAxis: 0,
-      xAngle: 0,
-      yAngle: 0,
-      coord0: '',
-      coord1: '',
-      coord2: '',
-      coord3: ''
-    };
+    this.state = {};
   }
   
   
-  // calculate distance between each time, if the number is under a certain threshold, ignore it
-  
-  setCoordinates = (xAxis = 0, yAxis = 0, xAngle = 0, yAngle = 0, c0 = 0, c1 = 0, c2 = 0, c3 = 0) => {
-    //this.setState({xAxis:xAxis, yAxis:yAxis, coord0:c0, coord1:c1, coord2:c2, coord3:c3});
-    
-    setInterval(this.setState({xAxis: xAxis, yAxis: yAxis, xAngle: xAngle, yAngle: yAngle}), 1200);
-    
-    
-    // console.log({
-    //   xAxis: this.state.xAxis,
-    //   yAxis: this.state.yAxis,
-    //   c0: this.state.coord0,
-    //   c1: this.state.coord1,
-    //   c2: this.state.coord2,
-    //   c3: this.state.coord3
-    // });
-  };
-  
   render() {
     
-    const {repositionModifier} = this.props;
-    const {xAxis, yAxis, xAngle, yAngle} = this.state;
+    const {yAxis, xAxis, xModifier} = this.props;
     
-    let formula = ((xAxis*.21) / .5) - 360;
-    if (formula > 25)
-      formula = 25;
-    else if (formula < -25)
-      formula = -25;
+    const repositionModifier = 4;
     
     const
       headStyles = {
@@ -57,7 +25,7 @@ export default class HeadContainer extends Component {
         border: '5px solid orange',
         background: 'orange',
         margin: '0 auto',
-        transform: `rotateX(${formula === 25 || formula === -25 ? -10 : 0}deg) rotateY(${formula}deg)`,
+        transform: `rotateX(${xModifier === 155 || xModifier === -155 ? -10 : 0}deg) rotateY(${xModifier}deg)`,
         // rotateX(10deg) rotateY(10deg)
         transformStyle: 'preserve-3d',
         transition: '1s all linear'
@@ -65,7 +33,7 @@ export default class HeadContainer extends Component {
       eyeContainer = {
         position: 'relative',
         width: 340,
-        height: 100,
+        height: 80,
         background: 'rgba(255,255,255,.9)',
         boxShadow: '0px -2px 10px 2px rgba(0,0,0,.4), 0px 5px 0px 4px rgba(0,0,0,.5)',
         overflow: 'hidden',
@@ -108,7 +76,7 @@ export default class HeadContainer extends Component {
             </div>
           </div>
         </div>
-        <div>{formula}</div>
+        <div>xmodifier:{xModifier} / xaxis: {xAxis} / yAxis: {yAxis}</div>
         
       </div>
     );
@@ -121,7 +89,7 @@ export default class HeadContainer extends Component {
 
 
 
-
+//<div style={{transform: `translate(calc(${xAxis}px / ${repositionModifier}),calc(${yAxis}px / ${repositionModifier}))`,}}>
 
 
 

@@ -1,10 +1,13 @@
-const compatibility = (function () {
+const compatibility = (() => {
   
   let lastTime = 0,
     
     URL = window.URL || window.webkitURL,
     
-    requestAnimationFrame = function (callback, element) {
+    
+    // checking if browser supports requestAnimationFrame, if it doesn't uses
+    // a shortened polyfill version.
+    requestAnimationFrame = (callback, element) => {
       let requestAnimationFrame =
         window.requestAnimationFrame ||
         window.webkitRequestAnimationFrame ||
@@ -13,7 +16,7 @@ const compatibility = (function () {
         function (callback, element) {
           const currTime = new Date().getTime();
           const timeToCall = Math.max(0, 16 - (currTime - lastTime));
-          const id = window.setTimeout(function () {
+          const id = window.setTimeout(() => {
             callback(currTime + timeToCall);
           }, timeToCall);
           lastTime = currTime + timeToCall;
@@ -23,7 +26,7 @@ const compatibility = (function () {
       return requestAnimationFrame.call(window, callback, element);
     },
     
-    getUserMedia = function (options, success, error) {
+    getUserMedia = (options, success, error) => {
       let getUserMedia =
         window.navigator.getUserMedia ||
         window.navigator.mozGetUserMedia ||
@@ -41,6 +44,7 @@ const compatibility = (function () {
     requestAnimationFrame: requestAnimationFrame,
     getUserMedia: getUserMedia
   };
+  
 })();
 
 
