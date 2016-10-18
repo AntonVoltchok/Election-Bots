@@ -10,7 +10,7 @@ export default class HeadContainer extends Component {
   
   render() {
     
-    const {yAxis, xAxis, xModifier} = this.props;
+    const {yAxis, xAxis, xModifier, cameraFeed} = this.props;
     
     const repositionModifier = 4;
     
@@ -19,8 +19,8 @@ export default class HeadContainer extends Component {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-around',
-        width: '1000px',
-        height: '600px',
+        width: cameraFeed.width,
+        height: cameraFeed.height,
         borderRadius: "40%",
         border: '5px solid orange',
         background: 'orange',
@@ -32,8 +32,8 @@ export default class HeadContainer extends Component {
       },
       eyeContainer = {
         position: 'relative',
-        width: 340,
-        height: 80,
+        width: cameraFeed.width * .34,
+        height: cameraFeed.height * .12,
         background: 'rgba(255,255,255,.9)',
         boxShadow: '0px -2px 10px 2px rgba(0,0,0,.4), 0px 5px 0px 4px rgba(0,0,0,.5)',
         overflow: 'hidden',
@@ -43,8 +43,8 @@ export default class HeadContainer extends Component {
         position: 'absolute',
         top: -130,
         left: -70,
-        width: 10,
-        height: 10,
+        width: cameraFeed.width * .01,
+        height: cameraFeed.width * .01,
         borderRadius: 1000,
         border: '10px solid rgba(0,0,0,0.12)',
         boxShadow: '0 0 0 20px rgba(0,0,0,0.6), 0 0 0 30px rgba(0,0,0,0.7)',

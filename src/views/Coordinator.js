@@ -25,6 +25,7 @@ export default class Coordinator extends Component {
   
   
   render() {
+    const {cameraFeed} = this.props;
     const {xAxis, yAxis} = this.state;
   
     let xModifier = ((xAxis*.21) / .5) - 360;
@@ -36,6 +37,7 @@ export default class Coordinator extends Component {
     return (
       <div>
         <HeadContainer
+          cameraFeed={cameraFeed}
           xAxis={xAxis}
           yAxis={yAxis}
           xModifier={xModifier}
