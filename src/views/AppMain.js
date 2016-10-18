@@ -3,6 +3,8 @@ import Coordinator from './Coordinator';
 import compatibility from './../detect-track/compatibility';
 import Smoother from './../detect-track/Smoother';
 import objectdetect from './../detect-track/ObjectDetect';
+import AudioController from './../audio/AudioController';
+
 // eslint-disable-next-line
 import ObjectDetectFrontalFace from './../detect-track/ObjectDetectFrontalFace';
 
@@ -116,6 +118,7 @@ export default class AppMain extends React.Component {
     
     return (
       <div style={{display:'flex', justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
+        <AudioController/>
         <Coordinator viewport={viewport} ref={c=>this._coordinator=c}/>
         <video ref={c=>this._video=c} style={videoStyles}>{``}</video>
         <div ref={c=>this._hitbox=c} style={{zIndex:1000,border:'5px solid red',position: 'absolute', display: 'block', opacity: 0}}>
@@ -126,3 +129,11 @@ export default class AppMain extends React.Component {
   
   
 }
+
+
+
+//
+// constructor(props) {
+//   super(props)
+//   this.synth = new Tone.SimpleSynth().toMaster()
+// }
