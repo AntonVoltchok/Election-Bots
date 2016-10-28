@@ -39,12 +39,12 @@ export default class AppMain extends React.Component {
         if (!detector) {
           const width = ~~(100 * video.videoWidth / video.videoHeight);
           const height = 100;
-          detector = new objectdetect.detector(width, height, 1.1, objectdetect.frontalface);
+          detector = new objectdetect.detector(width, height, 1.05, objectdetect.frontalface);
         }
         
         // Perform the actual detection, need to further test performance issues, but .6
         // seems to produce good results with user's face's being relatively far from camera:
-        const coords = detector.detect(video, .6);
+        const coords = detector.detect(video, 7);
         
         if (coords[0]) {
           let coord = smoother.smooth(coords[0]);
@@ -56,15 +56,22 @@ export default class AppMain extends React.Component {
             c2 = coord[2] *= video.videoWidth / detector.canvas.width,
             c3 = coord[3] *= video.videoHeight / detector.canvas.height;
           
+          
           // Using hitboxes temporarily for dev to get ratios down right
           this._hitbox.style.left = ~~(c0 + c2 * (1.0 / 8) + video.offsetLeft) + 'px';
           this._hitbox.style.top = ~~(c1 + c3 * (0.8 / 8) + video.offsetTop) + 'px';
           this._hitbox.style.width = ~~(c2 * 6 / 8) + 'px';
           this._hitbox.style.height = ~~(c3 * 6 / 8) + 'px';
           this._hitbox.style.opacity = 1;
-          
+  
+          console.log({
+            videooffsetleft: video.offsetLeft,
+            videooffsetTop: video.offsetTop
+          });
+  
+  
           // Sending coordinates to Coordinator.js
-          this._coordinator.setCoordinates(c0, c1, c2, c3, this._video);
+          this._coordinator.setCoordinates({c0, c1, c2, c3, video: this._video});
           
         } else {
           var opacity = this._hitbox.style.opacity - 0.2;
@@ -115,11 +122,12 @@ export default class AppMain extends React.Component {
     };
     
     return (
-      <div style={{display:'flex', justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
+      <div style={{display:'flex', justifyContent:'center', alignItems:'center',flexDirection:'column'}}>
         <AudioController/>
         <Coordinator cameraFeed={cameraFeed} viewport={viewport} ref={c=>this._coordinator=c}/>
+        <h1 style={{width:'100%', textAlign:'center'}}>Tiny-Hands Trump</h1>
         <video ref={c=>this._video=c} style={videoStyles}>{``}</video>
-        <div ref={c=>this._hitbox=c} style={{zIndex:1000,border:'5px solid red',position: 'absolute', display: 'block', opacity: 0}}>
+        <div ref={c=>this._hitbox=c} style={{transform:'scale(.75)', zIndex:1000,border:'5px solid red',position: 'absolute', display: 'block', opacity: 0}}>
         </div>
       </div>
     );

@@ -14,7 +14,7 @@ export default class AudioController extends Component {
     
     this.player = new Tone.Player({
       //onload: this.trumpSamples.get('dept_management'),
-      playbackRate: 1.5,
+      playbackRate: 1,
       url: `${process.env.PUBLIC_URL}/rosie.mp3`,
       loop: true
     }).toMaster();
@@ -22,7 +22,16 @@ export default class AudioController extends Component {
     this.player.autostart = true;
     console.log('this.player', this.player);
     
-    this.player.url = `${process.env.PUBLIC_URL}/rosie.mp3`;
+    this.player.url = `${process.env.PUBLIC_URL}/soundbytes/trump/dept_management.mp3`;
+    
+    this.analyzer = new Tone.Analyser();
+  
+    console.log('analysis', this.analyzer.analyse(this.player.buffer));
+  
+  
+    //console.log('analize', this.player.analyse());
+  
+  
   }
   
   

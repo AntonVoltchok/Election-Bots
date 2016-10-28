@@ -33,7 +33,7 @@ export default class HeadContainer extends Component {
       eyeContainer = {
         position: 'relative',
         width: cameraFeed.width * .34,
-        height: cameraFeed.height * .12,
+        height: cameraFeed.height * .11,
         background: 'rgba(255,255,255,.9)',
         boxShadow: '0px -2px 10px 2px rgba(0,0,0,.4), 0px 5px 0px 4px rgba(0,0,0,.5)',
         overflow: 'hidden',
@@ -41,10 +41,10 @@ export default class HeadContainer extends Component {
       },
       eyeBall = {
         position: 'absolute',
-        top: -130,
-        left: -70,
-        width: cameraFeed.width * .01,
-        height: cameraFeed.width * .01,
+        top: cameraFeed.height * -.35,
+        left: cameraFeed.width * 0.01,
+        width: cameraFeed.width * .006,
+        height: cameraFeed.width * .003,
         borderRadius: 1000,
         border: '10px solid rgba(0,0,0,0.12)',
         boxShadow: '0 0 0 20px rgba(0,0,0,0.6), 0 0 0 30px rgba(0,0,0,0.7)',
