@@ -19,7 +19,7 @@ export default class AudioController extends Component {
       loop: true
     }).toMaster();
     
-    this.player.autostart = true;
+    this.player.autostart = false;
     console.log('this.player', this.player);
     
     this.player.url = `${process.env.PUBLIC_URL}/soundbytes/trump/dept_management.mp3`;

@@ -23,7 +23,7 @@ const Smoother = function(alphas, initialValues, lookAhead) {
   alphas = alphas.slice(0);
   lookAhead = (typeof lookAhead !== 'undefined') ? lookAhead : 1.0;
   
-  this.smooth = function(values) {
+  this.smooth = (values) => {
     const smoothedValues = [];
     
     // time in seconds since last update:

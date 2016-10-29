@@ -3,27 +3,36 @@ import AppMain from './views/AppMain';
 
 class App extends Component {
   
-  getClientInfo = () => {
-    const w = window,
+  constructor(props) {
+    super(props);
+    this.state = {clientWidth: 0, clientHeight: 0};
+  }
+  
+  componentDidMount() {
+    const
+      w = window,
       d = document,
       e = d.documentElement,
       g = d.getElementsByTagName('body')[0],
       x = w.innerWidth || e.clientWidth || g.clientWidth,
-      y = w.innerHeight|| e.clientHeight|| g.clientHeight;
-    return {
-      x: x,
-      y: y
-    }
-  };
+      y = w.innerHeight || e.clientHeight || g.clientHeight;
+    this.setState({clientWidth: x, clientHeight: y});
+  }
+  
   
   render() {
     
-    const viewport = this.getClientInfo();
-    console.log('viweoport', viewport);
-  
+    console.log('viweoport',this.state.clientWidth, this.state.clientHeight);
+ 
+    const clientInfo = {
+      width: this.state.clientWidth,
+      height: this.state.clientHeight
+    };
+    
+    
     return (
       <div style={{margin:'2rem auto 0'}}>
-          <AppMain viewport={viewport}/>
+        <AppMain clientInfo={clientInfo}/>
       </div>
     );
   }
