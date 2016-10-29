@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a114dd0-4ab7-409a-9bab-20889408fde0" name="Default" comment="Logic/math refactor for how Coordinator ratios are generated , set, and used.">
+    <list default="true" id="9a114dd0-4ab7-409a-9bab-20889408fde0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/audio/AudioController.js" afterPath="$PROJECT_DIR$/src/audio/AudioController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/detect-track/Smoother.js" afterPath="$PROJECT_DIR$/src/detect-track/Smoother.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/detect-track/compatibility.js" afterPath="$PROJECT_DIR$/src/detect-track/compatibility.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/AppMain.js" afterPath="$PROJECT_DIR$/src/views/AppMain.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/CharacterController.js" afterPath="$PROJECT_DIR$/src/views/CharacterController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/Coordinator.js" afterPath="$PROJECT_DIR$/src/views/Coordinator.js" />
     </list>
     <ignored path="election-bots.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,11 +60,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="CharacterController.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="CharacterController.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/views/CharacterController.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+                <state relative-caret-position="341">
+                  <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -88,7 +82,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Smoother.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Smoother.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/detect-track/Smoother.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="60">
@@ -105,7 +99,7 @@
           <file leaf-file-name="AppMain.js" pinned="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/views/AppMain.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="214">
+                <state relative-caret-position="-1061">
                   <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
@@ -145,10 +139,10 @@
         <option value="$PROJECT_DIR$/src/detect-track/Smoother.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/detect-track/compatibility.js" />
-        <option value="$PROJECT_DIR$/src/views/CharacterController.js" />
         <option value="$PROJECT_DIR$/src/audio/AudioController.js" />
         <option value="$PROJECT_DIR$/src/views/AppMain.js" />
         <option value="$PROJECT_DIR$/src/views/Coordinator.js" />
+        <option value="$PROJECT_DIR$/src/views/CharacterController.js" />
       </list>
     </option>
   </component>
@@ -323,7 +317,7 @@
       <workItem from="1477634803798" duration="4391000" />
       <workItem from="1477641596498" duration="6639000" />
       <workItem from="1477716270553" duration="531000" />
-      <workItem from="1477728879515" duration="12435000" />
+      <workItem from="1477728879515" duration="14166000" />
     </task>
     <task id="LOCAL-00001" summary="removing bower_components, tested a few libs but didn't end up using any of them, some code comments">
       <created>1476079327040</created>
@@ -353,11 +347,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476718495053</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="tweaked added linear trend inputin Smoother for stability, Logic/math refactor for how Coordinator ratios are generated , set, and used">
+      <created>1477754406387</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1477754406387</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122433000" />
+    <option name="totallyTimeSpent" value="124164000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -425,7 +426,8 @@
     <MESSAGE value="hooked up FireBase for production builds, created AppMain.js (to initialize video, detector, smoother, and pass coordinates) and Coordinator.js (take coordinates and convert into ratios) to replace TrackAndMove module, HeadContainer is no longer stateful, switchted compatibility to use arrow functions" />
     <MESSAGE value="moved getClientInfo to top of tree, setting video dimensions into state if video has enough data" />
     <MESSAGE value="included Tone.js, logic for AppMain to stop setting camera feed state on each render" />
-    <option name="LAST_COMMIT_MESSAGE" value="included Tone.js, logic for AppMain to stop setting camera feed state on each render" />
+    <MESSAGE value="tweaked added linear trend inputin Smoother for stability, Logic/math refactor for how Coordinator ratios are generated , set, and used" />
+    <option name="LAST_COMMIT_MESSAGE" value="tweaked added linear trend inputin Smoother for stability, Logic/math refactor for how Coordinator ratios are generated , set, and used" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -717,27 +719,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/audio/AudioController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/CharacterController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/AppMain.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
+        <state relative-caret-position="-1061">
           <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -760,6 +744,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/audio/AudioController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/CharacterController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
           <folding />
         </state>
       </provider>

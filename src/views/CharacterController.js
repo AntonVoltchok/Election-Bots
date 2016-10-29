@@ -8,30 +8,59 @@ export default class HeadContainer extends Component {
   }
   
   render() {
-
-    const trumpHead = <img width='500px' src={process.env.PUBLIC_URL + '/image_assets/headNoEyes.png'} />;
-    const trumpEyes = <img width='500px' src={process.env.PUBLIC_URL + '/image_assets/eyesWithBrows.png'} />;
-  
-    return <div style={{opacity:'.9',position:'relative', maxWidth:'100%', display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
-      <div style={{position:'absolute',top:0, left:-250, zIndex:100}}>{trumpHead}</div>
-      <div style={{position:'absolute',top:0, left:-250, zIndex: 101}}>{trumpEyes}</div>
-    </div>;
+    
+    const {xRatio, yRatio} = this.props;
+    
+    const trumpHead = <img width='500px' src={process.env.PUBLIC_URL + '/image_assets/headNoEyes.png'}/>;
+    const trumpEyes = <img width='500px' src={process.env.PUBLIC_URL + '/image_assets/eyesWithBrows.png'}/>;
+    
+    const
+      eyesContainerStyles = {
+        position: 'absolute',
+        top: 0,
+        left: -250,
+        zIndex: 101,
+        transform: `translate3d(${xConstraintEyes}px, 0, 0)`,
+        transition: '0.2s'
+      },
+      headContainerStyles = {
+        position: 'absolute',
+        top: 0,
+        left: -250,
+        zIndex: 100
+      };
+    
+    const xConstraintEyes =
+      xRatio <= -15 ? -15 :
+        xRatio >= 15 ? 15 :
+          xRatio;
+    
+    const xConstraintFlipHead =
+      xRatio <= -1 ? -15 :
+        xRatio >= 15 ? 15 :
+          xRatio;
+    
+    return (
+      <div>
+        x {xRatio} / y {yRatio}
+        <div style={{opacity:'.9',position:'relative', maxWidth:'100%', display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
+          <div style={headContainerStyles}>{trumpHead}</div>
+          <div style={eyesContainerStyles}>{trumpEyes}</div>
+        </div>
+      </div>
+    );
+    
   }
 }
-
-
-
-
-
 
 
 //<div style={{transform: `translate(calc(${xAxis}px / ${repositionModifier}),calc(${yAxis}px / ${repositionModifier}))`,}}>
 
 
 /*
-*
-*
-* const {yAxis, xAxis, xModifier, cameraFeed} = this.props;
+ *
+ *
+ * const {yAxis, xAxis, xModifier, cameraFeed} = this.props;
  
  const repositionModifier = 4;
  
@@ -102,9 +131,9 @@ export default class HeadContainer extends Component {
  </div>
  );
  }
-*
-*
-* */
+ *
+ *
+ * */
 
 
 
