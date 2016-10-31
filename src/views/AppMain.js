@@ -21,7 +21,7 @@ export default class AppMain extends React.Component {
   componentDidMount() {
     
     const
-      smoother = new Smoother([0.9999999, 0.9999999, 0.999, 0.999], [0, 0, 0, 0]),
+      smoother = new Smoother([0.9999999, 0.9999999, 0.999, 0.999], [0, 0, 0, 0], .15),
       video = this._video;
     
     const play = () => {
@@ -39,42 +39,45 @@ export default class AppMain extends React.Component {
         if (!detector) {
           const width = ~~(100 * video.videoWidth / video.videoHeight);
           const height = 100;
-          detector = new objectdetect.detector(width, height, 1.05, objectdetect.frontalface);
+          detector = new objectdetect.detector(width, height, 1.1, objectdetect.frontalface);
         }
         
         // Perform the actual detection, need to further test performance issues, but .6
         // seems to produce good results with user's face's being relatively far from camera:
-        const coords = detector.detect(video, 7);
+        const coords = detector.detect(video, .6);
         
         if (coords[0]) {
           let coord = smoother.smooth(coords[0]);
           
           // Rescale coordinates from detector to video coordinate space:
+          // Will be used for testing as well as moving masks and wigs over live camera feed
           const
+            {clientInfo} = this.props,
+            hitStyle = this._hitbox.style,
+            focusStyle = this._focusPoint.style,
             c0 = coord[0] *= video.videoWidth / detector.canvas.width,
             c1 = coord[1] *= video.videoHeight / detector.canvas.height,
             c2 = coord[2] *= video.videoWidth / detector.canvas.width,
-            c3 = coord[3] *= video.videoHeight / detector.canvas.height;
+            c3 = coord[3] *= video.videoHeight / detector.canvas.height,
+            left = ~~(c0 + c2 * (1.0 / 8) + video.offsetLeft),
+            top = ~~(c1 + c3 * (0.8 / 8) + video.offsetTop),
+            hitBoxWidth = ~~(c2 * 6 / 8),
+            hitBoxHeight = ~~(c3 * 6 / 8),
+            focusPointInfo = {left, top, hitBoxWidth, hitBoxHeight, clientInfo};
+          
+          this._coordinator.setCoordinatorRatios(focusPointInfo);
           
           
-          // Using hitboxes temporarily for dev to get ratios down right
-          this._hitbox.style.left = ~~(c0 + c2 * (1.0 / 8) + video.offsetLeft) + 'px';
-          this._hitbox.style.top = ~~(c1 + c3 * (0.8 / 8) + video.offsetTop) + 'px';
-          this._hitbox.style.width = ~~(c2 * 6 / 8) + 'px';
-          this._hitbox.style.height = ~~(c3 * 6 / 8) + 'px';
-          this._hitbox.style.opacity = 1;
-  
-          console.log({
-            videooffsetleft: video.offsetLeft,
-            videooffsetTop: video.offsetTop
-          });
-  
-  
-          // Sending coordinates to Coordinator.js
-          this._coordinator.setCoordinates({c0, c1, c2, c3, video: this._video});
+          focusStyle.left = `${left + (hitBoxWidth / 2)}px`;
+          focusStyle.top = `${top + (hitBoxHeight / 2)}px`;
           
+          hitStyle.left = `${left}px`;
+          hitStyle.top = `${top}px`;
+          hitStyle.width = `${hitBoxWidth}px`;
+          hitStyle.height = `${hitBoxHeight}px`;
+          hitStyle.opacity = 1;
         } else {
-          var opacity = this._hitbox.style.opacity - 0.2;
+          const opacity = this._hitbox.style.opacity - 0.1;
           this._hitbox.style.opacity = opacity > 0 ? opacity : 0;
         }
       }
@@ -108,34 +111,65 @@ export default class AppMain extends React.Component {
   
   render() {
     
-    const {viewport} = this.props;
-    const cameraFeed = {
+    const {clientInfo} = this.props;
+    
+    const userCamera = {
       width: this.state.userCameraWidth,
       height: this.state.userCameraHeight
     };
-    console.log('camerafeed', cameraFeed);
     
-    const videoStyles = {
-      boxShadow: '0 0 3px 0 #f2f2f2',
-      overflow: 'hidden',
-      borderRadius: 1500
-    };
+    //console.log('camerafeed', userCamera);
+    
+    const
+      mainContainerStyles = {
+        display: 'flex',
+        height: '100vh',
+        width: '100vw',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+        boxShadow: 'inset 0 0 5px 5px hsla(240, 80%, 60%, .85)'
+      },
+      videoStyles = {
+        boxShadow: '0 0 3px 0 #f2f2f2',
+        overflow: 'hidden',
+        borderRadius: 1500,
+      },
+      hitboxStyles = {
+        zIndex: 1000,
+        border: '5px solid hsla(4, 90%, 58%, .2)',
+        position: 'absolute',
+        display: 'block',
+        opacity: 0,
+        borderRadius: 1000,
+      },
+      focusPointStyles = {
+        zIndex: 1100,
+        boxShadow: '0 0 10px 5px hsla(245, 95%, 45%, .45)',
+        background: 'hsla(245, 95%, 33%,.4)',
+        position: 'absolute',
+        display: 'block',
+        opacity: 1,
+        borderRadius: 1000,
+        width: 1,
+        height: 1
+      };
     
     return (
-      <div style={{display:'flex', justifyContent:'center', alignItems:'center',flexDirection:'column'}}>
+      <div style={mainContainerStyles}>
         <AudioController/>
-        <Coordinator cameraFeed={cameraFeed} viewport={viewport} ref={c=>this._coordinator=c}/>
-        <h1 style={{width:'100%', textAlign:'center'}}>Tiny-Hands Trump</h1>
-        <video ref={c=>this._video=c} style={videoStyles}>{``}</video>
-        <div ref={c=>this._hitbox=c} style={{transform:'scale(.75)', zIndex:1000,border:'5px solid red',position: 'absolute', display: 'block', opacity: 0}}>
+        <Coordinator userCamera={userCamera} clientInfo={clientInfo} ref={c=>this._coordinator=c}/>
+        <div>
+          <video ref={c=>this._video=c} style={videoStyles}>{``}</video>
         </div>
+        <div ref={c=>this._hitbox=c} style={hitboxStyles}></div>
+        <div ref={c=>this._focusPoint=c} style={focusPointStyles}></div>
       </div>
     );
   }
   
   
 }
-
 
 
 //
