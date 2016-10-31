@@ -112,21 +112,36 @@ export default class AppMain extends React.Component {
   render() {
     
     const {clientInfo} = this.props;
+    
     const userCamera = {
       width: this.state.userCameraWidth,
       height: this.state.userCameraHeight
     };
-    console.log('camerafeed', userCamera);
+    
+    //console.log('camerafeed', userCamera);
     
     const
-      videoStyles = {boxShadow: '0 0 3px 0 #f2f2f2', overflow: 'hidden', borderRadius: 1500},
+      mainContainerStyles = {
+        display: 'flex',
+        height: '100vh',
+        width: '100vw',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+        boxShadow: 'inset 0 0 5px 5px hsla(240, 80%, 60%, .85)'
+      },
+      videoStyles = {
+        boxShadow: '0 0 3px 0 #f2f2f2',
+        overflow: 'hidden',
+        borderRadius: 1500,
+      },
       hitboxStyles = {
         zIndex: 1000,
         border: '5px solid hsla(4, 90%, 58%, .2)',
         position: 'absolute',
         display: 'block',
         opacity: 0,
-        borderRadius: 1000
+        borderRadius: 1000,
       },
       focusPointStyles = {
         zIndex: 1100,
@@ -141,11 +156,12 @@ export default class AppMain extends React.Component {
       };
     
     return (
-      <div style={{display:'flex', justifyContent:'center', alignItems:'center',flexDirection:'column'}}>
+      <div style={mainContainerStyles}>
         <AudioController/>
         <Coordinator userCamera={userCamera} clientInfo={clientInfo} ref={c=>this._coordinator=c}/>
-        <h1 style={{width:'100%', textAlign:'center'}}>Tiny-Hands Trump</h1>
-        <video ref={c=>this._video=c} style={videoStyles}>{``}</video>
+        <div>
+          <video ref={c=>this._video=c} style={videoStyles}>{``}</video>
+        </div>
         <div ref={c=>this._hitbox=c} style={hitboxStyles}></div>
         <div ref={c=>this._focusPoint=c} style={focusPointStyles}></div>
       </div>

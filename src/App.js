@@ -31,7 +31,7 @@ class App extends Component {
     
     
     return (
-      <div style={{margin:'2rem auto 0'}}>
+      <div>
         <AppMain clientInfo={clientInfo}/>
       </div>
     );

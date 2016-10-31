@@ -27,7 +27,7 @@ export default class Coordinator extends Component {
     
     return (
       <div>
-        <h4 style={{position:'fixed', top:10, left:10, background: 'salmon'}}>focus output: {xRatio} / {yRatio}</h4>
+        <div style={{position:'fixed', top:10, left:10, background:'#fff', border: '4px solid tomato',padding:5, borderRadius:50}}> xRatio: {xRatio} yRatio:{yRatio}</div>
         <CharacterController xRatio={xRatio} yRatio={yRatio} ref={this._assignCharacterControllerRef} userCamera={userCamera}/>
       </div>
     );
