@@ -72,11 +72,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AudioController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AudioController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/audio/AudioController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+            <state relative-caret-position="195">
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deploy.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deploy.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -168,7 +178,7 @@
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="audio&#9;FILE&#9;file:///Users/antonvolt/code/face-tracking/election-bots/src/audio/AudioController.js&#10;pack&#9;FILE&#9;file:///Users/antonvolt/code/face-tracking/election-bots/package.json&#10;audiocon&#9;FILE&#9;file:///Users/antonvolt/code/face-tracking/election-bots/src/audio/AudioController.js&#10;app&#9;FILE&#9;file:///Users/antonvolt/code/face-tracking/election-bots/src/App.js&#10;coo&#9;FILE&#9;file:///Users/antonvolt/code/face-tracking/election-bots/src/views/Coordinator.js&#10;coord&#9;FILE&#9;file:///Users/antonvolt/code/face-tracking/election-bots/src/views/Coordinator.js" />
+    <property name="SearchEverywhereHistoryKey" value="sh&#9;FILE&#9;file:///Users/antonvolt/code/face-tracking/election-bots/deploy.sh&#10;audio&#9;FILE&#9;file:///Users/antonvolt/code/face-tracking/election-bots/src/audio/AudioController.js&#10;pack&#9;FILE&#9;file:///Users/antonvolt/code/face-tracking/election-bots/package.json&#10;audiocon&#9;FILE&#9;file:///Users/antonvolt/code/face-tracking/election-bots/src/audio/AudioController.js&#10;app&#9;FILE&#9;file:///Users/antonvolt/code/face-tracking/election-bots/src/App.js&#10;coo&#9;FILE&#9;file:///Users/antonvolt/code/face-tracking/election-bots/src/views/Coordinator.js&#10;coord&#9;FILE&#9;file:///Users/antonvolt/code/face-tracking/election-bots/src/views/Coordinator.js" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -291,7 +301,7 @@
       <workItem from="1477869422097" duration="17000" />
       <workItem from="1477869451959" duration="110000" />
       <workItem from="1477869574224" duration="390000" />
-      <workItem from="1477869989900" duration="1310000" />
+      <workItem from="1477869989900" duration="1521000" />
     </task>
     <task id="LOCAL-00001" summary="removing bower_components, tested a few libs but didn't end up using any of them, some code comments">
       <created>1476079327040</created>
@@ -342,11 +352,25 @@
       <option name="project" value="LOCAL" />
       <updated>1477875487414</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added image_assets directory with images in public,  workspace">
+      <created>1477875704885</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1477875704886</updated>
+    </task>
+    <task id="LOCAL-00009" summary="deploy.sh">
+      <created>1477875768618</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1477875768618</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138814000" />
+    <option name="totallyTimeSpent" value="139025000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -357,19 +381,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31277534" sideWeight="0.20492454" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964718" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21540062" sideWeight="0.4853058" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.122960374" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5668135" sideWeight="0.7950755" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13326283" sideWeight="0.11172414" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39941263" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27459618" sideWeight="0.4940429" order="2" side_tool="false" content_ui="tabs" x="640" y="303" width="640" height="777" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39941263" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -397,7 +421,9 @@
     <MESSAGE value="tweaked added linear trend inputin Smoother for stability, Logic/math refactor for how Coordinator ratios are generated , set, and used" />
     <MESSAGE value="added movement and logic for constraints in CharacterController" />
     <MESSAGE value="removed Tone.js, refactored some styled away from jsx to object lits, added constraints for vertical movement of focus point" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed Tone.js, refactored some styled away from jsx to object lits, added constraints for vertical movement of focus point" />
+    <MESSAGE value="added image_assets directory with images in public,  workspace" />
+    <MESSAGE value="deploy.sh" />
+    <option name="LAST_COMMIT_MESSAGE" value="deploy.sh" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -608,13 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deploy.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/detect-track/Smoother.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -727,8 +746,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/audio/AudioController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+        <state relative-caret-position="195">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
           <folding />
         </state>
       </provider>
