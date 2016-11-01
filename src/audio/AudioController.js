@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
+import AudioPlayer from './AudioPlayer';
 
-// "dept_management": `${process.env.PUBLIC_URL}/soundbytes/trump/dept_management.mp3`,
-//   "rosie": `${process.env.PUBLIC_URL}/rosie.mp3`,
+const audioDeptManagement = `${process.env.PUBLIC_URL}/soundbytes/trump/dept_management.mp3`;
+const audioRosie = `${process.env.PUBLIC_URL}/rosie.mp3`;
 
 
 export default class AudioController extends Component {
@@ -13,7 +14,9 @@ export default class AudioController extends Component {
   
   render() {
     return (
-      <div style={{margin:'2rem auto 0'}}>Audio Here</div>
+      <div style={{margin:'0rem auto 0'}}>
+        <AudioPlayer audio={audioDeptManagement}/>
+      </div>
     );
   }
 }
