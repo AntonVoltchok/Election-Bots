@@ -12,10 +12,19 @@ export default class AudioController extends Component {
     this.state = {buffersLoaded: false, playing: false};
   }
   
+  _assignAudioPlayerRef = c => this._audioPlayer = c;
+  
+  testSeek = () => {
+    const currentPosition = this._audioPlayer.seek;
+    console.log('current position', currentPosition);
+    
+  };
+  
   render() {
     return (
       <div style={{margin:'0rem auto 0'}}>
-        <AudioPlayer audio={audioDeptManagement}/>
+        <AudioPlayer ref={this._assignAudioPlayerRef} audio={audioDeptManagement}/>
+        <div onClick={this.testSeek} style={{cursor:'pointer', border:'5px solid orange'}}>TEST SEEK</div>
       </div>
     );
   }

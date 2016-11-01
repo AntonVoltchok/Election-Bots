@@ -1,7 +1,6 @@
 import Audio from 'react-howler'
 import React, {} from 'react'
 import raf from 'raf';
-import DataArray from './DataArray';
 
 export default class AutoPlay extends React.Component {
   constructor(props) {
@@ -14,21 +13,6 @@ export default class AutoPlay extends React.Component {
       mute: false,
       volume: 1.0
     };
-  }
-  
-  componentDidMount() {
-    console.log('windowaudio', window.AudioContext);
-    console.log('logging this', this);
-    
-    window.Howler.ctx = true;
-    
-    console.log({
-      windowHowler: window.Howler,
-      windowHowlerCtx: window.Howler.ctx,
-      audioRef: this._audioPlayer
-    });
-    
-    this.initAndConnectAnalyser();
   }
   
   componentWillUnmount() {
@@ -45,13 +29,11 @@ export default class AutoPlay extends React.Component {
     return this._audioPlayer.duration();
   }
   
-  get seek() {
-    this._audioPlayer.seek();
-  }
+  seek = () => this._audioPlayer.seek();
   
   setSeek = value => this._audioPlayer.seek(value);
   
-  handleOnLoad = () => this.setState({loaded: true, duration: this.audioPlayer.duration()});
+  handleOnLoad = () => this.setState({loaded: true, duration: this._audioPlayer.duration()});
   
   handleToggle = () => this.setState({playing: !this.state.playing});
   
@@ -93,35 +75,13 @@ export default class AutoPlay extends React.Component {
   clearRAF = () => raf.cancel(this._raf);
   
   
-  
-  // React Howler does not contain the Web Audio Analyser, but it does expose context
-  
-  connectMasterGainTo = (node) => console.log('windowaudio', window.AudioContext);
-  
-  connectNodeToDestination = (node) => node.connect(this.howler.destination);
-  
-  initAndConnectAnalyser = () => {
-    
-    //window.Howler.ctx = true;
-    
-    const analyser = this.howler.createAnalyser();
-    // disconnecting gain from destination and connecting it to analyzer
-    this.connectMasterGainTo(analyser);
-    // connecting analyzer to destination (output)
-    this.connectNodeToDestination(analyser);
-    // get analyser output of what howler is playing
-    //const dataArray = new Uint8Array(analyser.frequencyBinCount);
-    const dataArray = DataArray(analyser.frequencyBinCount);
-    return analyser.getByteTimeDomainData(dataArray);
-  };
-  
   render() {
     const {audio} = this.props;
     
     // temporary UI for testing
     
     return (
-      <div>
+      <div style={{position:'fixed', bottom:0, left:0, padding:5, border: '4px solid purple', height: 200, overflow:'scroll'}}>
         <Audio
           src={audio}
           playing={this.state.playing}
@@ -181,13 +141,38 @@ export default class AutoPlay extends React.Component {
 }
 
 
-// this.handleToggle = this.handleToggle.bind(this);
-// this.handleOnLoad = this.handleOnLoad.bind(this);
-// this.handleOnEnd = this.handleOnEnd.bind(this);
-// this.handleOnPlay = this.handleOnPlay.bind(this);
-// this.handleStop = this.handleStop.bind(this);
-// this.renderSeekPos = this.renderSeekPos.bind(this);
-// this.handleLoopToggle = this.handleLoopToggle.bind(this);
-// this.handleMuteToggle = this.handleMuteToggle.bind(this);
 
 
+
+
+
+
+
+
+// React Howler does not contain the Web Audio Analyser, but it does expose context
+//
+// componentDidMount() {
+//   console.log('windowaudio', window.AudioContext);
+//   console.log('logging this', this);
+//
+//   window.Howler.ctx = true;
+//
+//   console.log({
+//     windowHowler: window.Howler,
+//     windowHowlerCtx: window.Howler.ctx,
+//     audioRef: this._audioPlayer
+//   });
+//
+//   this.initAndConnectAnalyser();
+// }
+// connectMasterGainTo = (node) => console.log('windowaudio', window.AudioContext);
+//
+// connectNodeToDestination = (node) => node.connect(this.howler.destination);
+//
+// initAndConnectAnalyser = () => {
+//   const analyser = this.howler.createAnalyser();
+//   this.connectMasterGainTo(analyser);
+//   this.connectNodeToDestination(analyser);
+//   const dataArray = DataArray(analyser.frequencyBinCount);
+//   return analyser.getByteTimeDomainData(dataArray);
+// };
