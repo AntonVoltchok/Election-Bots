@@ -13,6 +13,7 @@ export default class HeadContainer extends Component {
     
     const trumpHead = <img width='400px' src={process.env.PUBLIC_URL + '/image_assets/headNoEyes.png'}/>;
     const trumpEyes = <img width='400px' src={process.env.PUBLIC_URL + '/image_assets/eyesWithBrows.png'}/>;
+    const podium = <img width='400px' src={process.env.PUBLIC_URL + '/image_assets/podium.png'}/>;
     
     const
       xConstraintEyes =
@@ -31,7 +32,7 @@ export default class HeadContainer extends Component {
         position: 'absolute',
         top: 0,
         left: -200,
-        zIndex: 101,
+        zIndex: 110,
         transform: `translate3d(${xConstraintEyes}px, ${yConstraintEyes + -10}px, 0)`,
         transition: '0.15s'
       },
@@ -41,6 +42,12 @@ export default class HeadContainer extends Component {
         top: 0,
         left: -200,
         zIndex: 100
+      },
+      podiumStyles = {
+        position: 'absolute',
+        top:140,
+        left: -200,
+        zIndex: 120,
       };
     
     return (
@@ -48,12 +55,37 @@ export default class HeadContainer extends Component {
         <div style={{position:'relative', maxWidth:'100%', display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
           <div style={headContainerStyles}>{trumpHead}</div>
           <div style={eyesContainerStyles}>{trumpEyes}</div>
+          <div style={podiumStyles}>{podium}</div>
         </div>
       </div>
     );
     
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// field db that is isReady in user
+// another field which is a collection of all_ready_users
+
+// user logs in, their info is added to all_ready_users
+// ------- on logout, it is removed
+// ------- on a successful connection with another user, it is removed
+
+
+
+
 
 
 //<div style={{transform: `translate(calc(${xAxis}px / ${repositionModifier}),calc(${yAxis}px / ${repositionModifier}))`,}}>
