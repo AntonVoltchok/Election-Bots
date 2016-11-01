@@ -35,7 +35,7 @@ export default class AutoPlay extends React.Component {
   
   handleOnLoad = () => this.setState({loaded: true, duration: this._audioPlayer.duration()});
   
-  handleToggle = () => this.setState({playing: !this.state.playing});
+  handleTogglePlay = () => this.setState({playing: !this.state.playing});
   
   handleLoopToggle = () => this.setState({loop: !this.state.loop});
   
@@ -56,7 +56,7 @@ export default class AutoPlay extends React.Component {
   };
   
   handleStop = () => {
-    this.player.stop();
+    this._audioPlayer.stop();
     this.setState({
       playing: false // Need to update our local state so we don't immediately invoke autoplay
     });
@@ -65,7 +65,7 @@ export default class AutoPlay extends React.Component {
   
   renderSeekPos = () => {
     this.setState({
-      seek: this.player.seek()
+      seek: this._audioPlayer.seek()
     });
     if (this.state.playing) {
       this._raf = raf(this.renderSeekPos)
@@ -79,9 +79,32 @@ export default class AutoPlay extends React.Component {
     const {audio} = this.props;
     
     // temporary UI for testing
+    const devControlsContainerStyles = {
+      position:'fixed',
+      bottom:0,
+      left:0,
+      padding:5,
+      border: '4px solid purple',
+      height: 130,
+      overflow:'scroll',
+      fontSize:'.75rem'
+    };
+    
+    if (!this.state.playing)
+      return <Audio
+        src={audio}
+        playing={this.state.playing}
+        onLoad={this.handleOnLoad}
+        onPlay={this.handleOnPlay}
+        onEnd={this.handleOnEnd}
+        loop={this.state.loop}
+        mute={this.state.mute}
+        volume={this.state.volume}
+        ref={this._assignAudioPlayerRef}
+      />;
     
     return (
-      <div style={{position:'fixed', bottom:0, left:0, padding:5, border: '4px solid purple', height: 200, overflow:'scroll'}}>
+      <div style={devControlsContainerStyles}>
         <Audio
           src={audio}
           playing={this.state.playing}
@@ -93,7 +116,7 @@ export default class AutoPlay extends React.Component {
           volume={this.state.volume}
           ref={this._assignAudioPlayerRef}
         />
-        <button onClick={this.handleToggle}>
+        <button onClick={this.handleTogglePlay}>
           {(this.state.playing) ? 'Pause' : 'Play'}
         </button>
         <button onClick={this.handleStop}>
@@ -139,14 +162,6 @@ export default class AutoPlay extends React.Component {
     )
   }
 }
-
-
-
-
-
-
-
-
 
 
 // React Howler does not contain the Web Audio Analyser, but it does expose context

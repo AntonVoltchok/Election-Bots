@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a114dd0-4ab7-409a-9bab-20889408fde0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/audio/DataArray.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/audio/AudioController.js" afterPath="$PROJECT_DIR$/src/audio/AudioController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/audio/AudioPlayer.js" afterPath="$PROJECT_DIR$/src/audio/AudioPlayer.js" />
@@ -31,7 +30,7 @@
       <file leaf-file-name="AppMain.js" pinned="true" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/AppMain.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="124">
               <caret line="13" column="20" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="20" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -43,8 +42,8 @@
       <file leaf-file-name="Coordinator.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/Coordinator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="30" column="64" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="64" />
+            <state relative-caret-position="209">
+              <caret line="30" column="78" selection-start-line="30" selection-start-column="72" selection-end-line="30" selection-end-column="78" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -72,37 +71,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AudioController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AudioController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/audio/AudioController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="146">
+              <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <marker date="1477877239000" expanded="true" signature="444:458" ph="..." />
+                <marker date="1478013140000" expanded="true" signature="958:972" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AudioPlayer.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AudioPlayer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/audio/AudioPlayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="101" column="2" selection-start-line="101" selection-start-column="2" selection-end-line="101" selection-end-column="2" />
+            <state relative-caret-position="201">
+              <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataArray.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/audio/DataArray.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -136,8 +125,8 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/views/AppMain.js" />
         <option value="$PROJECT_DIR$/src/views/Coordinator.js" />
-        <option value="$PROJECT_DIR$/src/audio/AudioController.js" />
         <option value="$PROJECT_DIR$/src/audio/DataArray.js" />
+        <option value="$PROJECT_DIR$/src/audio/AudioController.js" />
         <option value="$PROJECT_DIR$/src/audio/AudioPlayer.js" />
       </list>
     </option>
@@ -373,7 +362,7 @@
       <workItem from="1477869451959" duration="110000" />
       <workItem from="1477869574224" duration="390000" />
       <workItem from="1477869989900" duration="983000" />
-      <workItem from="1477875964925" duration="11147000" />
+      <workItem from="1477875964925" duration="13889000" />
     </task>
     <task id="LOCAL-00001" summary="removing bower_components, tested a few libs but didn't end up using any of them, some code comments">
       <created>1476079327040</created>
@@ -417,11 +406,25 @@
       <option name="project" value="LOCAL" />
       <updated>1477755953739</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="created new audio player based on howler with analyser">
+      <created>1478010486723</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1478010486723</updated>
+    </task>
+    <task id="LOCAL-00008" summary="removed analyzer and data component temporarily">
+      <created>1478011676134</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1478011676134</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149634000" />
+    <option name="totallyTimeSpent" value="152376000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -430,6 +433,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1731533" sideWeight="0.88827586" order="0" side_tool="false" content_ui="combo" x="111" y="73" width="960" height="1053" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3423517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31277534" sideWeight="0.20492454" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27459618" sideWeight="0.4940429" order="2" side_tool="false" content_ui="tabs" x="640" y="303" width="640" height="777" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964718" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21540062" sideWeight="0.4853058" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -443,7 +447,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27459618" sideWeight="0.4940429" order="2" side_tool="false" content_ui="tabs" x="640" y="303" width="640" height="777" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -471,7 +474,9 @@
     <MESSAGE value="included Tone.js, logic for AppMain to stop setting camera feed state on each render" />
     <MESSAGE value="tweaked added linear trend inputin Smoother for stability, Logic/math refactor for how Coordinator ratios are generated , set, and used" />
     <MESSAGE value="added movement and logic for constraints in CharacterController" />
-    <option name="LAST_COMMIT_MESSAGE" value="added movement and logic for constraints in CharacterController" />
+    <MESSAGE value="created new audio player based on howler with analyser" />
+    <MESSAGE value="removed analyzer and data component temporarily" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed analyzer and data component temporarily" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -743,26 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/AppMain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Coordinator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="30" column="64" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controls/CameraRTC.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -779,17 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/audio/AudioController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <marker date="1477877239000" expanded="true" signature="444:458" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/CharacterController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -798,20 +772,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/AppMain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/Coordinator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="30" column="78" selection-start-line="30" selection-start-column="72" selection-end-line="30" selection-end-column="78" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/audio/DataArray.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/audio/AudioPlayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="101" column="2" selection-start-line="101" selection-start-column="2" selection-end-line="101" selection-end-column="2" />
+        <state relative-caret-position="201">
+          <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/audio/AudioController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1478013140000" expanded="true" signature="958:972" ph="..." />
           </folding>
         </state>
       </provider>
