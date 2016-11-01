@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import AudioPlayer from './AudioPlayer';
 
-const audioDeptManagement = `${process.env.PUBLIC_URL}/soundbytes/trump/dept_management.mp3`;
-const audioRosie = `${process.env.PUBLIC_URL}/soundbytes/trump/rosie.mp3`;
-const sniffSniff = `${process.env.PUBLIC_URL}/soundbytes/trump/sniffSniff.mp3`;
+const soundDeptManagement = `${process.env.PUBLIC_URL}/soundbytes/trump/dept_management.mp3`;
+const soundRosie = `${process.env.PUBLIC_URL}/soundbytes/trump/rosie.mp3`;
+const soundSniffSniff = `${process.env.PUBLIC_URL}/soundbytes/trump/sniffSniff.mp3`;
 
 
 export default class AudioController extends Component {
@@ -17,18 +17,14 @@ export default class AudioController extends Component {
   }
   
   componentDidMount() {
-    this.togglePlay('soundDeptManagement');
-    // this.setState({currentAudio: 'audioDeptManagement', playing:true})
+    this.togglePlay('soundRosie');
+    // this.setState({currentAudio: 'soundDeptManagement', playing:true})
   }
   
   _soundDeptManagementRef = c => this._soundDeptManagement = c;
   _soundRosieRef = c => this._soundRosie = c;
   _soundSniffSniffRef = c => this._soundSniffSniff = c;
   
-  // testSeek = () => {
-  //   const currentPosition = this._audioPlayer.seek();
-  //   console.log('current position', currentPosition);
-  // };
   
   togglePlay = (audio) => {
     switch (audio) {
@@ -74,9 +70,9 @@ export default class AudioController extends Component {
   render() {
     return (
       <div style={{margin:'0rem auto 0'}}>
-        <AudioPlayer ref={this._soundDeptManagementRef} audio={audioDeptManagement}  parent={this}/>
-        <AudioPlayer ref={this._soundRosieRef} audio={audioRosie} parent={this}/>
-        <AudioPlayer ref={this._soundSniffSniffRef} audio={sniffSniff} parent={this}/>
+        <AudioPlayer ref={this._soundDeptManagementRef} audio={soundDeptManagement}  parent={this}/>
+        <AudioPlayer ref={this._soundRosieRef} audio={soundRosie} parent={this}/>
+        <AudioPlayer ref={this._soundSniffSniffRef} audio={soundSniffSniff} parent={this}/>
         <div onClick={this.pauseSniffPlay} style={{cursor:'pointer',borderRadius:500, padding:5, border:'5px solid orange'}}>
           SNIFF SNIFF SNIFF</div>
       </div>
